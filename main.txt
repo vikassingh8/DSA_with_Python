@@ -1,0 +1,9 @@
+best case-:    omega notaion 
+average case-: theta notation
+worst case-:    Big O-notaion
+contant time:-   O(1)
+linear Time :-  O(n)
+quadratic   :-   O(n2)
+cubin:-            O(n3)
+logritham Time:-    O(logn)     1/2 or 1/3 etc
+  
