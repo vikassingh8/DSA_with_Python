@@ -3,14 +3,6 @@
 # attribute is varible like fname ,lname
 
 
-
-
-
-
-
-
-
-
 # class UserName:
 #     def __init__(self,first_name,last_name):
 #         self.fName=first_name
@@ -21,13 +13,6 @@
 
 # result= UserName("vikas","singh")
 # result.FullName()
-
-
-
-
-
-
-
 
 
 # inharitence
@@ -42,13 +27,6 @@
 # userResult.FullName()
 
 
-
-
-
-
-
-
-
 # encapsulation
 
 # class Car:
@@ -61,9 +39,6 @@
 
 # resul=Car("hero",450)
 # print(resul.__price)
-
-
-
 
 
 # polymorphism          same function name but different result
@@ -96,21 +71,50 @@
 # print(details.poly())
 
 
-
-
 # class variables
 
 
+# class Students():
+#     total_students=0
+#     def __init__(self,name):
+#         self.name=name
+#         Students.total_students+=1
 
-class Students():
-    total_students=0
+
+# Students("vikas")
+# Students("himanshu")
+# print(Students.total_students)
+
+
+# staticmethod
+
+
+# class Students:
+#     total_students = 0
+
+#     def __init__(self, name):
+#         self.name = name
+#         Students.total_students += 1
+#     @staticmethod
+#     def discription():
+#         return "hyy how are you"
+
+
+# resul=Students("vikas")
+
+# print(resul.discription())
+
+
+# proparty decorators          we dont want user can overwrite the varible
+
+
+class Car:
     def __init__(self,name):
-        self.name=name
-        Students.total_students+=1
+        self.__name=name
+    @property
+    def userName(self):
+        return self.__name
 
 
-
-Students("vikas")
-Students("himanshu")
-print(Students.total_students)
-    
+result=Car("vikas")
+print(result.userName)
