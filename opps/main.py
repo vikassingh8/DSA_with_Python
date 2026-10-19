@@ -97,7 +97,7 @@
 #         Students.total_students += 1
 #     @staticmethod
 #     def discription():
-#         return "hyy how are you"
+#         return "hy how are you"
 
 
 # resul=Students("vikas")
